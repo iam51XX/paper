@@ -12,12 +12,12 @@ BOT_NAME = "paper"
 SPIDER_MODULES = ["paper.spiders"]
 NEWSPIDER_MODULE = "paper.spiders"
 
-
+FEED_EXPORT_FIELDS=['学校','期刊','数量','属于','总分类']
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = "paper (+http://www.yourdomain.com)"
 
 # Obey robots.txt rules
-ROBOTSTXT_OBEY = True
+ROBOTSTXT_OBEY = False
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
