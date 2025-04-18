@@ -64,6 +64,33 @@ class ZhiwangspiderSpider(scrapy.Spider):
 
     #对每一个【学校 + 期刊】组合，构造一个 POST 表单，模拟从知网“高级检索”搜索论文数量，并发出请求，交给 parse() 去处理返回结果。
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     def parse(self, response,**kwargs):
         response=response.text
         try:
