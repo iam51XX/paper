@@ -20,13 +20,12 @@ class ZhiwangspiderSpDDider(scrapy.Spider):
         "Ecp_IpLoginFail": "250418139.227.167.167",
         "SID_kns_new": "kns2618105",
         "updatetime-advInput": "2025-04-18 09:44:47",
-        "knsadv-searchtype": '{"BLZOG7CK":"gradeSearch,majorSearch","MPMFIG1A":"gradeSearch,majorSearch,sentenceSearch",...}',
-        "createtime-advInput": "2025-04-18 13:54:49",
+        "knsadv-searchtype": '{"BLZOG7CK":"gradeSearch,majorSearch","MPMFIG1A":"gradeSearch,majorSearch,sentenceSearch","T2VC03OH":"gradeSearch,majorSearch","JQIRZIYA":"gradeSearch,majorSearch,sentenceSearch","S81HNSV3":"gradeSearch","YSTT4HG0":"gradeSearch,majorSearch,authorSearch,sentenceSearch","ML4DRIDX":"gradeSearch,majorSearch","WQ0UVIAA":"gradeSearch,majorSearch","VUDIXAIY":"gradeSearch,majorSearch","NN3FJMUV":"gradeSearch,majorSearch,authorSearch,sentenceSearch","LSTPFY1C":"gradeSearch,majorSearch,sentenceSearch","HHCPM1F8":"gradeSearch,majorSearch","OORPU5FE":"gradeSearch,majorSearch","WD0FTY92":"gradeSearch,majorSearch,authorSearch,sentenceSearch","BPBAFJ5S":"gradeSearch,majorSearch,authorSearch,sentenceSearch","EMRPGLPA":"gradeSearch,majorSearch","PWFIRAGL":"gradeSearch,majorSearch,sentenceSearch","U8J8LYLV":"gradeSearch,majorSearch","R79MZMCB":"gradeSearch","J708GVCE":"gradeSearch,majorSearch","HR1YT1Z9":"gradeSearch,majorSearch","JUP3MUPD":"gradeSearch,majorSearch,authorSearch,sentenceSearch","NLBO1Z6R":"gradeSearch,majorSearch","RMJLXHZ3":"gradeSearch,majorSearch,sentenceSearch","1UR4K4HZ":"gradeSearch,majorSearch,authorSearch,sentenceSearch","NB3BWEHK":"gradeSearch,majorSearch","XVLO76FD":"gradeSearch,majorSearch"}',
         "SID_sug": "018104",
         "knsadvisearchtype": "gDoCkPaXdjDCcKq91XRchA==",
         "dblang": "both",
-        "tfstk": "gp7xL7G6282mF4Y3orZojbzhd-NuENC2wt5ISdvmfTBRhT0Df-5gBPpREi0Mltj9CI5whSwwsL0OI1bcINCZWC11QSJggufVgF8_KJvT-s5qxdW9oZKjVL1yOcObqng_60ZuKJ43rTTnYa2hIkf__udwFIi6cdN-FBdv5AifCLtWOBDX5F6_wQOM_xGX1I1SVBvWCFtfCQ1WUCH0n8pT9pgOYeF5wnzKsV3OyIKvBVvSW17I-3pQAK3iSL-9DmfXeVg1yGKjyGpbYbvwoK7wMOzEuEtOY1AOHr3fB67PeQ6QW2vfa6jH0ZZi-HLDHhQfM-HpFZBRuE60f2BpkOKCl3hsSs1XHUd5R5meEapcCZK7t2KMPwxBlgqznhYv9O_VHf31d_fhu37TpY9NmB8Wtszxye1X1gyC-wHJuvvpsmN8wcowcQPNag8LaJ_ddQp3aEoZb3GMwpV8wcowcQRJK7Ribc-Ss"
-
+        "createtime-advInput": "2025-04-18 19:02:41",
+        "tfstk": "giejKvftVEYbcWYumZIrARqwR9H_hP6F5hiTxlp2XxHA55Ztz-lauSP71yrKkxrZu33tyRww_qjmCfUTkPGGmVut5PrTggWFLoqmIAp189WEnE9NdrOxMdIt2Did4mn47yPZIAQFzthoY7DgkMoviSERVcoEDdU9HQB-rDAxBqh9yQnKyVHTWqp-2DmpBCntB3ISj4ntBAUtexFkc0dKPoscHjLV4Kl4D499B-Bii2soo0m4FEhS8oeyBdCicjgLD4QAlwhtwlc_IhvsuoF3SDUvkwl0X7aScA6yMvE76yiuH98jqSr8Y4EBjdqxh8wSv8I9pVybak3SdhBYVxgj9-lACGaLVlFEN8SdKxMxk5k0bH_4V-a4m8ZwXQHj37GQhvBHkVPzARi_INX7Rk2uP0UdCZIyUpuCxbA6VXvsV2S5VCAGTyRu2FsN4ghxq0fNVgOnzjnoV2S5VCAiM0mlogsWt45.."
     }
 
     school = pandas.read_csv(os.path.join(root_path,"../school.csv"))
@@ -37,10 +36,7 @@ class ZhiwangspiderSpDDider(scrapy.Spider):
         "accept": "*/*",
         "accept-encoding": "gzip, deflate, br, zstd",
         "accept-language": "zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6",
-        "connection": "keep-alive",
-        "content-length": "1868",
         "content-type": "application/x-www-form-urlencoded; charset=UTF-8",
-        "host": "kns.cnki.net",
         "origin": "https://kns.cnki.net",
         "referer": "https://kns.cnki.net/kns8s/AdvSearch?crossids=YSTT4HG0,LSTPFY1C,JUP3MUPD,MPMFIG1A,WQ0UVIAA,BLZOG7CK,PWFIRAGL,EMRPGLPA,NLBO1Z6R,NN3FJMUV",
         "sec-ch-ua": '"Microsoft Edge";v="135", "Not-A.Brand";v="8", "Chromium";v="135"',
@@ -92,4 +88,4 @@ class ZhiwangspiderSpDDider(scrapy.Spider):
         yield ite
 
 if __name__ == '__main__':
-    subprocess.run(['scrapy', 'crawl', 'zhiwangspider', '-o', 'data1.csv'])
+    subprocess.run(['scrapy', 'crawl', 'zhiwangspider', '-o', '南核data.csv'])
