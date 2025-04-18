@@ -2,3 +2,4 @@ beautifulsoup4~=4.12.3
 scrapy~=2.11.1
 pandas~=2.2.2
 itemadapter~=0.3.0
+openpyxl
